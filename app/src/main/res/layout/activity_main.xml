@@ -3,13 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:icon="@drawable/lowes_companies_logo"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@android:color/background_dark">
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        android:background="@android:color/black">
+        tools:ignore="MissingConstraints">
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
