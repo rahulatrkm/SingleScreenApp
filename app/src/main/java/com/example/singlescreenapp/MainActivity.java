@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void lowesYt(View view) {
-        String url = "https://www.facebook.com/lowes";
+        String url = "https://www.youtube.com/Lowes";
         Uri uriUrl = Uri.parse(url);
         Intent launchBrowser = new Intent(Intent.ACTION_VIEW, uriUrl);
         startActivity(launchBrowser);
