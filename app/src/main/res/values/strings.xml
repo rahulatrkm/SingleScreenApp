@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Single Screen App</string>
+    <string name="lowes_logo">lowes logo</string>
+    <string name="lowes_store">Lowes Store</string>
+    <string name="lowes_description">Lowe\'s, is an American retail company specializing in home improvement. Headquartered in Mooresville, North Carolina, the company operates a chain of retail stores in the United States and Canada. As of November 2018, Lowe\'s and its related businesses operate 2,015 home improvement and hardware stores in North America.</string>
+    <string name="lowes_fb_page">Lowes Facebook Page</string>
+    <string name="lowes_twitter_page">Lowes twitter page</string>
+    <string name="lowes_pinterest_page">Lowes Pinterest Page</string>
+    <string name="lowes_instagram_page">Lowes Instagram Page</string>
+    <string name="lowes_yoututbe_channel">Lowes yoututbe channel</string>
 </resources>

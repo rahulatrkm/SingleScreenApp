@@ -1,18 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:icon="@drawable/lowes_companies_logo"
     tools:context=".MainActivity">
-
-    <TextView
+    <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:ignore="MissingConstraints"
+        android:background="@android:color/black">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:id="@+id/lowes"
+            android:src="@drawable/lowes_store"
+            android:contentDescription="@string/lowes_store" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:src="@drawable/lowes_companies_logo"
+            android:background="@android:color/background_dark"
+            android:contentDescription="@string/lowes_logo"
+            android:onClick="goToLowes"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:text="@string/lowes_description"
+            android:padding="15sp"
+            android:textSize="18sp"
+            android:textColor="@android:color/primary_text_dark_nodisable"
+            android:background="@android:color/background_dark"
+            android:layout_below="@+id/lowes" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:id="@+id/contact"
+            android:layout_below="@+id/description">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/fb_logo"
+                android:onClick="lowesfb"
+                android:layout_weight="1"
+                android:contentDescription="@string/lowes_fb_page" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/twitter_logo"
+                android:onClick="lowesTwitter"
+                android:layout_weight="1"
+                android:contentDescription="@string/lowes_twitter_page" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/pinterest_logo"
+                android:onClick="lowesPinterest"
+                android:contentDescription="@string/lowes_pinterest_page" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/instagram_logo"
+                android:onClick="lowesInsta"
+                android:layout_weight="1"
+                android:contentDescription="@string/lowes_instagram_page" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/yt_logo"
+                android:onClick="lowesYt"
+                android:layout_weight="1"
+                android:contentDescription="@string/lowes_yoututbe_channel" />
+        </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
